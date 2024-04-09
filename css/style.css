@@ -23,6 +23,7 @@ body {
 .title {
 	font-family: 'Bebas Neue Regular';
 	font-size: 60px;
+	font-weight: 400;
 	padding-top: 30px;
 	color: #000;
 	position: relative;
@@ -240,27 +241,19 @@ body {
 }
 
 .steps__request {
-	position: relative;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 160%;
 	color: #5c8ee5;
-	padding-left: 60px;
 	text-decoration: none;
-	opacity: 0;
-	transition: all 0.9s ease;
+	display: flex;
+	align-items: center;
 }
 
 .steps__request::before {
 	content: '';
-	position: absolute;
 	width: 40px;
 	height: 1px;
 	background-color: #5c8ee5;
-	left: 0;
-	top: 11px;
-}
-
-.steps__item:hover .steps__request {
-	opacity: 1;
+	margin-right: 20px;
 }
