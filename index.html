@@ -15,7 +15,67 @@
 
 <body>
 	<header class="header">
+		<div class="mobile">
+			<ul class="mobile-menu">
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">О компании</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">Контрактное производство</a>
+					<ul class="mobile-submenu">
+						<li class="mobile-submenu__item"><a href="#" class="mobile-submenu__link">Автомобильная химия</a></li>
+						<li class="mobile-submenu__item"><a href="#" class="mobile-submenu__link">Бытовая химия</a></li>
+						<li class="mobile-submenu__item"><a href="#" class="mobile-submenu__link">Дезинфицирующие средства</a></li>
+						<li class="mobile-submenu__item"><a href="#" class="mobile-submenu__link">Пищевые аэрозоли</a></li>
+						<li class="mobile-submenu__item"><a href="#" class="mobile-submenu__link">Косметическая продукция</a></li>
+						<li class="mobile-submenu__item"><a href="#" class="mobile-submenu__link">Краски аэрозольные</a></li>
+					</ul>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">Собственные марки</a>
+					<ul class="mobile-submenu">
+						<li class="mobile-submenu__item"><a href="#" class="mobile-submenu__link">Автохимия AG-Tech</a></li>
+						<li class="mobile-submenu__item"><a href="#" class="mobile-submenu__link">Автохимия AP</a></li>
+					</ul>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">Новости</a>
+				</li>
+				<li class="mobile-menu__item">
+					<a href="#" class="mobile-menu__link">Контакты</a>
+				</li>
+			</ul>
+			<div class="mobile-feedback">
+				<a class="mobile-feedback__phone" href="tel:+74996861014">+7 (499) 686-10-14</a>
+				<address class="mobile-feedback__address">г. Мосвка, Холодильный пер. 4к1с8
+					<svg class="phone-icon" width="24" height="24">
+						<use href="./img/sprite.svg#adress"></use>
+					</svg>
+				</address>
+				<a href="mailto:a.dragunov@tdaliance.ru" class="mobile-feedback__mail">a.dragunov@tdaliance.ru
+					<svg class="mail-icon" width="24" height="24">
+						<use href="./img/sprite.svg#mail"></use>
+					</svg>
+				</a>
+				<a href="#" class="mobile-feedback__vk">
+					<svg class="mail-icon" width="24" height="24">
+						<use href="./img/sprite.svg#vk"></use>
+					</svg>
+				</a>
+				<a href="" class="mobile-feedback__insta">
+					<svg class="mail-icon" width="24" height="24">
+						<use href="./img/sprite.svg#inst"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<!-- Мобильное меню -->
 		<nav class="navbar">
+			<a href="#" class="m-menu-toogle">
+				<span class="m-menu-toogle__line"></span>
+				<span class="m-menu-toogle__line"></span>
+				<span class="m-menu-toogle__line"></span>
+			</a>
 			<a class="header__logo" href="index.html">
 				<svg class="logo-svg" width="140" height="44">
 					<use href="./img/sprite.svg#logo-light"></use>
@@ -41,14 +101,17 @@
 			</ul>
 
 			<div class="header__phone">
-				<svg class="logo-svg" width="24" height="24">
+				<svg class="phone-icon" width="24" height="24">
 					<use href="./img/sprite.svg#phone"></use>
 				</svg>
 				<a class="phone-link" href="tel:++74996861014">+7 (499) 686-10-14</a>
 			</div>
 
 			<button class="navbar__button button">
-				Получить консультацию
+				<svg class="button-icon" width="24" height="24">
+					<use href="./img/sprite.svg#phone"></use>
+				</svg>
+				<span class="button-text">Получить консультацию</span>
 			</button>
 		</nav>
 
