@@ -147,7 +147,7 @@ body {
 }
 
 .section {
-	margin: 150px 0 150px;
+	margin: 9.375rem 0 9.375rem;
 }
 
 .header {
@@ -155,7 +155,7 @@ body {
 	background-position: 8%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	position: relative;
 }
 
@@ -272,7 +272,7 @@ body {
 }
 
 .header__subtitle {
-	font-size: 1rem;
+	font-size: 1.1rem;
 	line-height: 160%;
 	max-width: 45rem;
 	margin: 0 0 3.125rem;
@@ -300,14 +300,27 @@ body {
 	padding: 1.875rem 3.125rem;
 	border: 1px solid rgba(235, 235, 240, 0.2);
 	width: 18rem;
-}
-
-.header-featurs__item:not(:last-child) {
-	border-right: 1px solid rgba(235, 235, 240, 0.2);
+	min-height: 100%;
 }
 
 .header-featurs__text {
 	margin: .8125rem 0 0 0;
+}
+
+.slider-buttons {
+	display: none;
+	height: 44px;
+}
+
+.slider-button-prev,
+.slider-button-next {
+	height: 100%;
+	flex-basis: 50%;
+	border: 1px solid rgba(235, 235, 240, 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
 }
 
 .steps {
@@ -322,6 +335,7 @@ body {
 .steps__item {
 	max-width: 20.625rem;
 	padding-right: 1.875rem;
+	min-height: 100%;
 }
 
 .steps__num {
@@ -355,7 +369,7 @@ body {
 	font-size: 1rem;
 	line-height: 160%;
 	color: #828a99;
-	margin: 0 0 1.25rem 0;
+	margin: 0 0 1, 625rem 0;
 }
 
 .steps__request {
@@ -374,6 +388,17 @@ body {
 	height: 1px;
 	background-color: #5c8ee5;
 	margin-right: 1.25rem;
+}
+
+.slider-button-steps {
+	justify-content: flex-end;
+}
+
+.slider-button-steps-prev,
+.slider-button-steps-next {
+	background-color: #5c8ee5;
+	flex-basis: 0;
+	padding: 10px 15px;
 }
 
 
@@ -456,6 +481,18 @@ body {
 	.container {
 		max-width: 70rem;
 	}
+
+	.slider-buttons {
+		display: flex;
+	}
+
+	/* .section {
+		margin: 7.69rem 0 7.69rem;
+	}
+*/
+	.steps {
+		margin-bottom: 1.53rem;
+	}
 }
 
 @media (max-width: 992px) {
@@ -529,7 +566,26 @@ body {
 	}
 
 	.header__content {
-		padding-top: 12rem;
+		padding-top: 9rem;
+	}
+}
+
+@media (max-width: 800px) {
+	.container {
+		max-width: 40rem;
 	}
 
+	.header__title {
+		font-size: 4rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		max-width: 90%;
+	}
+
+	.header__title {
+		font-size: 4rem;
+	}
 }
