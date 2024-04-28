@@ -1,16 +1,19 @@
 const navbar = document.querySelector(".navbar");
-const logo = document.querySelector(".logo-svg use");
+const logo = document.querySelector(".logo");
+const logoLight = document.querySelector(".logo--light");
 const mMenu = document.querySelector(".m-menu-toogle");
 const mobileMenu = document.querySelector(".mobile");
 
 const lightModeOn = (event) => {
   navbar.classList.add("navbar--light");
-  logo.href.baseVal = "./img/sprite.svg#logo";
+  logo.style.display = "block";
+  logoLight.style.display = "none";
 };
 
 const lightModeOff = (event) => {
   navbar.classList.remove("navbar--light");
-  logo.href.baseVal = "./img/sprite.svg#logo-light";
+  logo.style.display = "none";
+  logoLight.style.display = "block";
 };
 
 window.addEventListener("scroll", () => {
@@ -51,7 +54,6 @@ const madalCloseScroll = (event) => {
 
 const swiper = new Swiper(".swiper", {
   speed: 400,
-  autoHeight: true,
   navigation: {
     nextEl: ".slider-button-next",
     prevEl: ".slider-button-prev",

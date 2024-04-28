@@ -186,6 +186,7 @@ body {
 .navbar--light {
 	background-color: #fafbfc;
 	height: 4.625rem;
+	color: black;
 }
 
 .header__logo {
@@ -194,6 +195,10 @@ body {
 	padding: 0 3.125rem;
 	border-right: 1px solid rgba(235, 235, 240, 0.2);
 	height: 100%;
+}
+
+.logo {
+	display: none;
 }
 
 .header__menu {
@@ -239,6 +244,10 @@ body {
 	gap: 1.125rem;
 	height: 100%;
 	padding: 1.5625rem 3.3125rem;
+}
+
+.navbar--light .navbar__button {
+	color: #fff;
 }
 
 .button-icon {
@@ -300,7 +309,8 @@ body {
 	padding: 1.875rem 3.125rem;
 	border: 1px solid rgba(235, 235, 240, 0.2);
 	width: 18rem;
-	min-height: 100%;
+	/* min-height: 100%; */
+	height: auto;
 }
 
 .header-featurs__text {
@@ -437,7 +447,8 @@ body {
 		padding: 0 1.5rem;
 	}
 
-	.logo-svg {
+	.logo,
+	.logo-light {
 		max-width: 6rem;
 	}
 }
