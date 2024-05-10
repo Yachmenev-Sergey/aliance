@@ -128,7 +128,7 @@ body {
 
 .title {
 	font-family: 'Bebas Neue Regular';
-	font-size: 60px;
+	font-size: 3.75rem;
 	font-weight: 400;
 	padding-top: 24px;
 	color: #000;
@@ -539,6 +539,7 @@ body {
 
 .brands__title {
 	font-size: 1.75rem;
+	font-weight: normal;
 	line-height: 160%;
 	color: #292d33;
 	margin: 0;
@@ -596,7 +597,7 @@ body {
 	}
 
 	.logo,
-	.logo-light {
+	.logo--light {
 		max-width: 6rem;
 	}
 }
@@ -630,7 +631,7 @@ body {
 	}
 
 	.navbar {
-		height: 5rem;
+		height: 5.1rem;
 	}
 
 	.header__phone {
@@ -685,7 +686,7 @@ body {
 	}
 
 	.m-menu-toogle {
-		padding: 1.375rem 1.75rem;
+		padding: 1.975rem 2.30rem;
 		border-right: 1px solid rgba(235, 235, 240, 0.2);
 		width: 80px;
 		height: 100%;
@@ -697,6 +698,10 @@ body {
 	.m-menu-toogle__line {
 		width: 100%;
 		height: 1px;
+		background-color: #fff;
+	}
+
+	.navbar--light .m-menu-toogle__line {
 		background-color: #000;
 	}
 
@@ -711,10 +716,11 @@ body {
 	.header__logo {
 		flex-grow: 1;
 		justify-content: center;
+		padding: 0 4.1rem;
 	}
 
 	.navbar__button {
-		padding: 1.375rem 1.75rem;
+		padding: 1.375rem 2.15rem;
 	}
 
 	.navbar__button .button-text {
@@ -767,7 +773,13 @@ body {
 	}
 
 	.header__title {
-		font-size: 4rem;
+		font-size: 3.7rem;
+		padding-top: 18px;
+		margin: 0 0 1.2rem;
+	}
+
+	.header__subtitle {
+		margin: 0 0 2.0rem;
 	}
 
 	.brands__logo {
@@ -780,6 +792,14 @@ body {
 		grid-template-areas:
 			"logo title"
 			"text text";
+	}
+
+	.header-featurs {
+		margin-top: 4.05rem;
+	}
+
+	.section {
+		margin: 8.075rem 0 9.375rem;
 	}
 
 
