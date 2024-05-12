@@ -560,6 +560,94 @@ body {
 	grid-area: text;
 }
 
+.founder {
+	position: relative;
+	/* background-image: url(../img/founder-img.jpg);
+	background-size: contain;
+	background-position: left top;
+	background-repeat: no-repeat;
+	min-height: 41.25rem;
+	object-fit: cover;
+	max-width: 100%; */
+}
+
+.founder__photo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40%;
+	min-height: 660px;
+	object-fit: cover;
+}
+
+.founder__wrapper-content {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 3.125rem;
+}
+
+.founder__content {
+	flex-basis: 50%;
+}
+
+.founder__title {
+	max-width: 480px;
+}
+
+.founder__text {
+	font-size: 1rem;
+	line-height: 160%;
+	color: #828a99;
+	margin: 1.25rem 0 1.875rem;
+}
+
+.clients__wrapper {
+	display: flex;
+}
+
+.clients__content {
+	flex-basis: 48%;
+	flex-grow: 1;
+}
+
+.clients__list {
+	list-style: none;
+	padding: 0;
+	columns: 2 auto;
+	margin-top: 2.5rem;
+}
+
+.clients__item {
+	font-size: 1rem;
+	line-height: 160%;
+	color: #292d33;
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	margin-bottom: 1.375rem;
+}
+
+.clients__logo {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 50%;
+	padding-top: 2rem;
+}
+
+.clients__link {
+	padding: 2.8125rem 5.3125rem;
+
+}
+
+.clients__link:hover .clients__image {
+	filter: grayscale(0);
+}
+
+.clients__image {
+	filter: grayscale(100%);
+	transition: all .6s ease-out;
+}
+
 
 /* Медиа запросы */
 
@@ -599,6 +687,10 @@ body {
 	.logo,
 	.logo--light {
 		max-width: 6rem;
+	}
+
+	.clients__link {
+		padding: 1.875rem 3.75rem;
 	}
 }
 
@@ -658,6 +750,17 @@ body {
 		flex-direction: column;
 	}
 
+	.clients__content {
+		flex-basis: 60%;
+	}
+
+	.clients__logo {
+		justify-content: center;
+	}
+
+	.clients__link:last-child {
+		display: none;
+	}
 
 }
 
@@ -743,6 +846,19 @@ body {
 	.card {
 		flex-basis: 50%;
 	}
+
+	.clients__wrapper {
+		flex-wrap: wrap;
+	}
+
+	.clients__content {
+		flex-basis: 70%;
+		flex-grow: 0;
+	}
+
+	.clients__logo {
+		flex-basis: 100%;
+	}
 }
 
 @media (max-width: 800px) {
@@ -764,6 +880,20 @@ body {
 
 	.brands__content {
 		padding: 0;
+	}
+
+	.founder__photo {
+		position: relative;
+		width: 100%;
+		min-height: 18.4375rem;
+	}
+
+	.founder__content {
+		flex-basis: 100%;
+	}
+
+	.clients__content {
+		flex-basis: 100%;
 	}
 }
 
@@ -800,6 +930,10 @@ body {
 
 	.section {
 		margin: 8.075rem 0 9.375rem;
+	}
+
+	.clients__list {
+		columns: auto;
 	}
 
 
