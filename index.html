@@ -197,7 +197,7 @@
 		<div class="container">
 			<h2 class="section__title title">Схема работы</h2>
 			<!-- Основной блок слайдера -->
-			<div class="swiper">
+			<div class="swiper steps-slider">
 				<!-- Additional required wrapper -->
 				<ol class="swiper-wrapper steps">
 					<!-- Slides -->
@@ -232,13 +232,13 @@
 					</li>
 				</ol>
 				<!-- If we need navigation buttons -->
-				<div class="slider-buttons slider-button-steps">
-					<div class="slider-button-prev slider-button-steps-prev">
+				<div class="buttons-steps">
+					<div class="slider-button-prev buttons-steps-prev primary-button-slider">
 						<svg class="logo-svg" width="30" height="20">
 							<use href="./img/sprite.svg#arrow-prev"></use>
 						</svg>
 					</div>
-					<div class="slider-button-next slider-button-steps-next">
+					<div class="slider-button-next buttons-steps-next primary-button-slider">
 						<svg class="logo-svg" width="30" height="20">
 							<use href="./img/sprite.svg#arrow-next"></use>
 						</svg>
@@ -473,6 +473,53 @@
 		<!-- /.container -->
 	</section>
 	<!-- /.section clients -->
+	<section class="section blogs">
+		<div class="container">
+			<h2 class="section__title title">
+				Блог экспертов в области производства
+			</h2>
+			<div class="swiper blogs-slider">
+				<div class="swiper-wrapper blogs__cards">
+					<div class="swiper-slide blogs__card">
+						<img src="./img/blogs-image1.jpg" alt="" class="blogs__image">
+						<h3 class="blogs__title">Современная методология разработки одухотворила всех причастных</h3>
+						<p class="blogs__text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую
+							ситуацию, в равной степени
+							предоставлены...</p>
+					</div>
+					<div class="swiper-slide blogs__card">
+						<img src="./img/blogs-image2.jpg" alt="" class="blogs__image">
+						<h3 class="blogs__title">Сложно сказать, почему жизнь прекрасна</h3>
+						<p class="blogs__text">Сложно сказать, почему элементы политического процесса функционально разнесены на
+							независимые элементы. Безусловно,
+							высокотехнологичная...</p>
+					</div>
+					<div class="swiper-slide blogs__card">
+						<img src="./img/blogs-image2.jpg" alt="" class="blogs__image">
+						<h3 class="blogs__title">Сложно сказать, почему жизнь прекрасна</h3>
+						<p class="blogs__text">Сложно сказать, почему элементы политического процесса функционально разнесены на
+							независимые элементы. Безусловно,
+							высокотехнологичная...</p>
+					</div>
+				</div>
+				<div class="buttons-blog">
+					<a href="#" class="steps__request">Весь блог</a>
+					<div class="buttons-wrap">
+						<div class="slider-button-prev buttons-blog-prev primary-button-slider">
+							<svg class="logo-svg" width="30" height="20">
+								<use href="./img/sprite.svg#arrow-prev"></use>
+							</svg>
+						</div>
+						<div class="slider-button-next buttons-blog-next primary-button-slider">
+							<svg class="logo-svg" width="30" height="20">
+								<use href="./img/sprite.svg#arrow-next"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<script src="./js/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
